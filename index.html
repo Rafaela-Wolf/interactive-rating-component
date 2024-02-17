@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="description" content="Interactive rating component">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Interactive rating component</title>
+
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+<body>
+  <main>
+    <div class="star-icon">
+      <img src="src/images/icon-star.svg" alt="Star Icon">
+    </div>
+
+    <div class="description">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
+
+    <nav class="feedback-number">
+      <ul class="numbers">
+        <li class="number">1</li>
+        <li class="number">2</li>
+        <li class="number">3</li>
+        <li class="number">4</li>
+        <li class="number">5</li>
+      </ul>
+    </nav>
+
+    <button class="btn" id="btn">Submit</button>
+  </main>
+
+  <div class="hidden-card show-card">
+    <div class="thank-you-img">
+      <img src="src/images/illustration-thank-you.svg" alt="Illustration thank you">
+    </div>
+
+    <div class="text-selected-number">
+      <p>You selected 4 out of 5</p>
+    </div>
+
+    <div class="message">
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </div>
+
+  <script src="src/js/index.js"></script>
+</body>
+</html>

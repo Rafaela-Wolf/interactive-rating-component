@@ -1,0 +1,50 @@
+.hidden-card {
+    background-color: #1E252F;
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    display: none;
+}
+
+.hidden-card.show-hidden-card {
+    display: block;
+}
+
+.thank-you-img {
+    text-align: center;
+    margin: 30px;
+}
+
+.text-selected-number {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    width: 60%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.text-selected-number p {
+    font-size: 15px;
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+.message {
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.message h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+.message p {
+    font-size: 15px;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.3;
+}

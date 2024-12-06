@@ -1,0 +1,12 @@
+@media (max-width: 425px) {
+    .main-card {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 293px) {
+    .main-card {
+        background-color: hsl(216, 12%, 8%);
+        text-align: center;
+    }
+}

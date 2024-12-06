@@ -1,13 +1,8 @@
-.hidden-card {
+.message-card {
     background-color: #1E252F;
     width: 350px;
     height: 350px;
     border-radius: 15px;
-    display: none;
-}
-
-.hidden-card.show-hidden-card {
-    display: block;
 }
 
 .thank-you-img {

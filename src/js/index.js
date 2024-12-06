@@ -1,52 +1,33 @@
-// function feedbackNumberSelected() {
-//     const selectedNumber = document.querySelectorAll('.number');
-//     let isFeedbcakSelected = true;
+const submitButton = document.querySelector("#submit-btn");
+const mainCard = document.querySelector(".main-card");
+const messageCard = document.querySelector(".message-card");
+const textNumber = document.querySelector(".text-number");
 
-//     selectedNumber.forEach(number => {
-//         number.addEventListener('click', () => {
-//             if (!number.classList.contains("selected")) {
-//                 selectedNumber.forEach(num => num.classList.remove("selected"));
-//                 number.classList.add("selected");
-//                 isFeedbcakSelected = true;
-//             } else {
-//                 number.classList.remove("selected");
-//                 isFeedbcakSelected = false;
-//             }
-//         });
-//     });
+function feedbackNumberSelected() {
+    const selectedNumbers = document.querySelectorAll(".number");
 
-//     return isFeedbcakSelected
-// }
+    selectedNumbers.forEach(number => {
+        number.addEventListener("click", () => {
+            selectedNumbers.forEach(num => num.classList.remove("selected"));
+            number.classList.add("selected");
+        });
+    });
+}
 
-// const submitButton = document.querySelector(".btn");
-
-// const hideFirstCard = document.querySelector(".main-card");
-
-// const showSecondCard = document.querySelector('.hidden-card');
-
-// if (feedbackNumberSelected()) {
-//     submitButton.addEventListener('click', () => {
-//         hideFirstCard.classList.add("hide-card");
-//         showSecondCard.classList.add("show-hidden-card");
-//     })
-// }
-
-const submitBtn = document.querySelector('.submit-btn');
-
-
-
-submitBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    const selectedNumber = document.querySelectorAll('.number');
-
-    selectedNumber.forEach(number => {
-        number.addEventListener('click', () => {
-            if (selectedNumber) {
-                selectedNumber.classList.add('selected');
-            }
-    
-            selectedNumber.classList.remove('selected');
-        })
-    })
+submitButton.addEventListener("click", () => {
+    const selectedNumber = document.querySelector(".number.selected");
+    if (selectedNumber) {
+        const userChoice = selectedNumber.textContent;
+        textNumber.textContent = `You selected ${userChoice} out of 5.`;
+        messageCard.classList.remove("hide-card");
+        mainCard.classList.add("hide-card");
+    } else {
+        const errorCard = document.querySelector('.error-container');
+        errorCard.classList.remove("hide");
+        setTimeout(() => {
+            errorCard.classList.add("hide");
+        }, 3000);
+    }
 });
+
+feedbackNumberSelected();

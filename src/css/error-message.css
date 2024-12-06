@@ -1,0 +1,24 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(25, 97%, 53%);
+    height: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.error-message {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: hsl(30, 30%, 20%);
+}
+
+.hide {
+    display: none;
+}

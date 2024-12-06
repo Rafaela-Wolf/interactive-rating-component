@@ -1,12 +1,75 @@
+@media (max-width: 600px) {
+    .error-container {
+        height: 15px;
+        padding: 15px;
+    }
+    
+    .error-message {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
 @media (max-width: 425px) {
     .main-card {
         margin: 30px;
     }
+
+    .description h1 {
+        font-size: 22px;
+    }
+
+    .feedback-number .numbers .number {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .submit-btn {
+        margin: 25px auto;
+    }
+
+    .message h1 {
+        font-size: 22px;
+    }
+    
+    .message p {
+        font-size: 12px;
+    }
 }
 
-@media (max-width: 293px) {
+@media (max-width: 420px) {
+    .error-container {
+        padding: 25px;
+    }
+
+    .error-message {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
     .main-card {
         background-color: hsl(216, 12%, 8%);
-        text-align: center;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+
+    .star-icon img {
+        display: none;
+    }
+
+    .description {
+       text-align: center;
+    }
+
+    .message-card {
+        background-color: hsl(216, 12%, 8%);
+    }
+
+    .text-selected-number p {
+        font-size: 12px;
     }
 }
